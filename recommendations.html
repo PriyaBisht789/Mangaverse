@@ -1,154 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recommendations - MangaVerse</title>
-
     <style>
         *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-        }
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-        html{
-            scroll-behavior:smooth;
-        }
+html{
+    scroll-behavior:smooth;
+}
 
-        body{
-            font-family:Arial, Helvetica, sans-serif;
-            background:linear-gradient(to right,#0f0c29,#302b63,#24243e);
-            color:white;
-        }
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:linear-gradient(to right,#0f0c29,#302b63,#24243e);
+    color:white;
+}
 
-        header{
-            background:linear-gradient(to right,#0f0f0f,#1b1b1b,#2d2d2d);
-            text-align:center;
-            padding:30px;
-        }
+header{
+    background:linear-gradient(to right,#0f0f0f,#1b1b1b,#2d2d2d);
+    text-align:center;
+    padding:30px;
+}
 
-        header h1{
-            font-size:50px;
-            color:#7DD3FC;
-        }
+/* Header */
 
-        header p{
-            margin-top:15px;
-            color:#D1D5DB;
-            font-size:20px;
-        }
+header h1{
+    font-size:50px;
+    color:#7DD3FC;
+    
+}
 
-        nav{
-            margin-top:25px;
-            background:#1B1438;
-            padding:18px;
-            box-shadow:0 5px 12px rgba(0,0,0,.4);
-        }
+header p{
+    margin-top:15px;
+    color:#D1D5DB;
+    font-size:20px;
+}
 
-        nav a{
-            color:white;
-            text-decoration:none;
-            margin:0 25px;
-            font-size:18px;
-            font-weight:bold;
-            transition:0.3s ease;
-        }
 
-        nav a:hover{
-            color:#C084FC;
-        }
+/* Navbar */
 
-        section{
-            padding:70px;
-            text-align:center;
-        }
+nav{
+    margin-top:25px;
+    background:#1B1438;
+    padding:20px;
+    box-shadow:0 5px 12px rgba(0,0,0,.4);
+}
 
-        section h2{
-            font-size:35px;
-            margin-bottom:20px;
-        }
+nav a{
+    color:white;
+    text-decoration:none;
+    margin: 60px;
+    font-size:18px;
+    font-weight:bold;
+    transition:0.3s ease;
+}
 
-        section p{
-            font-size:18px;
-            color:#D1D5DB;
-            margin-bottom:30px;
-        }
+nav a:hover{
+    color:#C084FC;
+}
 
-        ul{
-            list-style:none;
-            max-width:500px;
-            margin:0 auto;
-        }
+section{
+    padding:70px;
+}
 
-        ul li{
-            background:#1E1B4B;
-            padding:15px;
-            margin:15px 0;
-            border-radius:12px;
-            font-size:20px;
-            transition:0.3s;
-        }
-
-        ul li:hover{
-            background:#6D28D9;
-            transform:scale(1.03);
-        }
-
-        .back-btn{
-            display:inline-block;
-            margin-top:40px;
-            padding:12px 25px;
-            background:#8B5CF6;
-            color:white;
-            text-decoration:none;
-            border-radius:30px;
-            transition:0.3s;
-        }
-
-        .back-btn:hover{
-            background:#A855F7;
-        }
+section h1{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:35px;
+}
     </style>
 </head>
-
 <body>
 
-<header>
+ <header>
 
-    <h1>MangaVerse</h1>
+<h1>MangaVerse</h1>
 
-    <p>📖 Find your next favorite manga</p>
+<p>📖 Find your next favorite manga</p>
 
-   <nav>
 
-<a href="index.html">Home</a>
-<a href="index.html#genres">Genres</a>
+
+<nav>
+
+<a href="manga.html">Home</a>
+<a href="manga.html#genres">Genres</a>
 <a href="toprated.html">Top Rated</a>
-<a href="index.html#contact">Contact</a>
+<a href="manga.html#contact">Contact</a>
 
+</nav>
 </nav>
 
 </header>
-
 <section>
+<h1>Manga Recommendations</h1>
 
-    <h2>📚 Manga Recommendations</h2>
-
-    <p>Here are some highly recommended manga series:</p>
-
-    <ul>
-        <li>Monster</li>
-        <li>20th Century Boys</li>
-        <li>Vinland Saga</li>
-        <li>Blue Period</li>
-        <li>Kingdom</li>
-        <li>Vagabond</li>
-    </ul>
-
-    <a href="index.html" class="back-btn">⬅ Back to Home</a>
-
+<p>Here are some recommended manga:</p>
 </section>
+<ul>
+    <li>Monster</li>
+    <li>20th Century Boys</li>
+    <li>Vinland Saga</li>
+    <li>Blue Period</li>
+</ul>
+
+<a href="index.html">⬅ Back to Home</a>
 
 </body>
 </html>
