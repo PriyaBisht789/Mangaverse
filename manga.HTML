@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MangaVerse</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:linear-gradient(to right,#0f0c29,#302b63,#24243e);
+    color:white;
+}
+
+/* Header */
+
+header{
+    background:linear-gradient(to right,#0f0f0f,#1b1b1b,#2d2d2d);
+    text-align:center;
+    padding:30px;
+}
+
+header h1{
+    font-size:50px;
+    color:#7DD3FC;
+}
+
+header p{
+    margin-top:15px;
+    color:#D1D5DB;
+    font-size:20px;
+}
+
+/* Navbar */
+nav{
+    margin-top:25px;
+    background:#1B1438;
+    padding:18px;
+    box-shadow:0 5px 12px rgba(0,0,0,.4);
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 25px;
+    font-size:18px;
+    font-weight:bold;
+    transition:0.3s ease;
+}
+
+nav a:hover{
+    color:#C084FC;
+}
+
+/* Hero */
+
+.hero{
+    text-align:center;
+    padding:70px 20px;
+}
+
+.hero h2{
+    font-size:50px;
+}
+
+.hero p{
+    margin:25px auto;
+    width:60%;
+    color:#D1D5DB;
+    font-size:20px;
+    line-height:1.6;
+}
+
+/* Search Box */
+
+.search-box{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:40px auto;
+}
+
+.search-box input{
+    width:430px;
+    height:58px;
+    padding:0 22px;
+    border:none;
+    outline:none;
+    border-radius:30px 0 0 30px;
+    font-size:17px;
+    color:#333;
+    background:#fff;
+    box-shadow:0 5px 15px rgba(0,0,0,.25);
+}
+
+.search-box input::placeholder{
+    color:#777;
+}
+
+.search-box input:focus{
+    box-shadow:0 0 15px rgba(125,211,252,.6);
+}
+
+.search-box button{
+    width:150px;
+    height:58px;
+    border:none;
+    border-radius:0 30px 30px 0;
+    background:linear-gradient(135deg,#8B5CF6,#A855F7);
+    color:white;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:all .3s ease;
+    box-shadow:0 5px 15px rgba(139,92,246,.45);
+}
+
+.search-box button:hover{
+    background:linear-gradient(135deg,#A855F7,#C084FC);
+    transform:translateY(-2px);
+    box-shadow:0 8px 25px rgba(168,85,247,.7);
+}
+
+/* Explore Button */
+
+.explore-btn{
+    margin-top:30px;
+    padding:15px 35px;
+    background:linear-gradient(135deg,#8B5CF6,#A855F7);
+    color:white;
+    border:none;
+    border-radius:30px;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:all .3s ease;
+    box-shadow:0 5px 15px rgba(139,92,246,.45);
+}
+
+.explore-btn:hover{
+    background:linear-gradient(135deg,#A855F7,#C084FC);
+    transform:translateY(-3px);
+    box-shadow:0 8px 25px rgba(168,85,247,.7);
+}
+
+/* Sections */
+
+section{
+    padding:70px;
+}
+
+section h2{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:35px;
+}
+
+/* Cards */
+
+.cards{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:30px;
+}
+
+.card{
+    width:220px;
+    background:#1E1B4B;
+    border-radius:15px;
+    overflow:hidden;
+    transition:all .35s ease;
+    box-shadow:0 5px 12px rgba(0,0,0,.4);
+}
+
+.card:hover{
+    transform:translateY(-10px) scale(1.03);
+    box-shadow:0 0 25px rgba(139,92,246,.6);
+}
+
+.card img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+}
+
+.card h3{
+    padding:15px 10px 5px;
+    text-align:center;
+}
+
+.card p{
+    padding:0 10px 20px;
+    color:#D1D5DB;
+    text-align:center;
+}
+
+/* Genres */
+
+.genre-container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.genre{
+    background:#6D28D9;
+    padding:15px 30px;
+    border-radius:30px;
+    text-decoration:none;
+    color:white;
+    display:inline-block;
+    transition:all .3s ease;
+}
+
+.genre:hover{
+    background:#8B5CF6;
+    transform:scale(1.05);
+}
+
+#contact{
+    max-width:700px;
+    margin:50px auto;
+    padding:40px;
+    background:#1E1B4B;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 5px 20px rgba(0,0,0,.4);
+}
+
+#contact h2{
+    color:#7DD3FC;
+    margin-bottom:25px;
+    font-size:35px;
+}
+
+#contact p{
+    font-size:18px;
+    color:#D1D5DB;
+    margin:15px 0;
+    transition:0.3s;
+}
+
+#contact p:hover{
+    color:#C084FC;
+}
+
+/* Footer */
+
+footer{
+    margin-top: 60px;
+    background: #111;
+    text-align: center;
+    padding: 30px;
+    color: #BDBDBD;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>MangaVerse</h1>
+
+<p>📖 Find your next favorite manga</p>
+
+<nav>
+
+<a href="#home">Home</a>
+<a href="#recommendations">Recommendations</a>
+<a href="#genres">Genres</a>
+<a href="#toprated">Top Rated</a>
+<a href="#contact">Contact</a>
+
+</nav>
+
+</header>
+
+<!-- Hero -->
+
+<section class="hero">
+
+<h2>Welcome to MangaVerse</h2>
+
+<p>
+Explore the best manga recommendations,
+discover hidden gems,
+and find your next unforgettable adventure.
+</p>
+
+ <div class="search-box">
+        <input type="text" placeholder="🔍 Search manga by title or genre...">
+        <button>Search</button>
+    </div>
+
+    <button class="explore-btn">Explore Now</button>
+
+
+</section>
+
+<!-- Trending -->
+
+<section>
+
+<h2>🔥 Trending This Week</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="https://cdn.kibrispdr.org/data/758/one-piece-logo-png-33.png">
+<h3>One Piece</h3>
+<p>⭐ 9.9/10</p>
+</div>
+
+<div class="card">
+<img src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2023/11/blue-lock.jpg">
+<h3>Blue Lock</h3>
+<p>⭐ 9.5/10</p>
+</div>
+
+<div class="card">
+<img src="https://animotaku.fr/wp-content/uploads/2023/05/anime-frieren-visuel-frieren.jpeg">
+<h3>Frieren</h3>
+<p>⭐ 9.8/10</p>
+</div>
+
+<div class="card">
+<img src="https://versekcorp.com/cdn/shop/collections/42.-dandadan.webp?v=1736557892">
+<h3>Dandadan</h3>
+<p>⭐ 9.4/10</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- Genres -->
+
+<section id="genres">
+
+<h2>📚 Browse by Genre</h2>
+
+<div class="genre-container">
+
+<a href="#action" class="genre">⚔ Action</a>
+
+<a href="#romance" class="genre">💖 Romance</a>
+
+<a href="#comedy" class="genre">😂 Comedy</a>
+
+<a href="#horror" class="genre">👻 Horror</a>
+
+<a href="#fantasy" class="genre">✨ Fantasy</a>
+
+<a href="#sports" class="genre">🏐 Sports</a>
+
+<a href="#mystery" class="genre">🔍 Mystery</a>
+
+<a href="#scifi" class="genre">🌌 Sci-Fi</a>
+
+</div>
+
+</section>
+
+<!-- Hidden Gems -->
+
+<section>
+
+<h2>💎 Hidden Gems</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="https://i.pinimg.com/originals/7f/d8/84/7fd884aa1c4893b165b195d7072cf113.jpg">
+<h3>Blue Period</h3>
+<p>An inspiring story about discovering art.</p>
+</div>
+
+<div class="card">
+<img src="https://tse4.mm.bing.net/th/id/OIP.D_X35KNu-UF8esAnHJ-ItgAAAA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3">
+<h3>Spirit Circle</h3>
+<p>A unique manga about reincarnation and destiny.</p>
+</div>
+
+<div class="card">
+<img src="https://cdn.kodansha.us/statics/Products/32359_ec28b58f-c462-4fe7-aeb5-f38740c93fce.jpg">
+<h3>Witch Hat Atelier</h3>
+<p>Beautiful fantasy with breathtaking artwork.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2>📩 Contact Us</h2>
+
+<p>
+<h2> a manga recommendation, suggestion, or feedback?
+We'd love to hear from you!</h2>
+</p>
+
+<br>
+
+<p>📧 Email: mangaverse@example.com</p>
+
+<p>📷 Instagram: @MangaVerse</p>
+
+<p>🐦 X (Twitter): @MangaVerse</p>
+
+<p>💬 Discord: MangaVerse Community</p>
+
+</section>
+
+
+<footer>
+
+<h3>MangaVerse</h3>
+
+<br>
+
+<p>Made with ❤️ by Priya</p>
+
+<br>
+
+<p>© 2026 MangaVerse. All Rights Reserved.</p>
+
+</footer>
+
+</body>
+</html>
