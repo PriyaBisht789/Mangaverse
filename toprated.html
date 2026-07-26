@@ -1,1 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
 
+    <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Top Rated | MangaVerse</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        html{
+            scroll-behavior:smooth;
+        }
+
+        body{
+            font-family:Arial,Helvetica,sans-serif;
+            background:linear-gradient(to right,#0f0c29,#302b63,#24243e);
+            color:white;
+        }
+
+        /*Header*/
+
+        header{
+            background:linear-gradient(to right,#0f0f0f,#1b1b1b,#2d2d2d);
+            text-align:center;
+            padding:30px;
+            }
+
+            header h1{
+            font-size:50px;
+            color:#7DD3FC;
+        }
+
+        header p{
+            margin-top:15px;
+            color:#D1D5DB;
+            font-size:20px;
+        }
+
+        /* Navbar */
+        nav{
+            margin-top:25px;
+            background:#1B1438;
+            padding:18px;
+            box-shadow:0 5px 12px rgba(0,0,0,.4);
+        }
+        
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:0 25px;
+            font-size:18px;
+            font-weight:bold;
+            transition:.3s;
+        }
+
+        nav a:hover{
+            color:#C084FC;
+        }
+        
+        /* Page Heading */
+
+        .page-title{
+            text-align:center;
+            margin-top:60px;
+        }
+
+        .page-title h2{
+            font-size:35px;
+            margin-top:0px;
+            
+            color:#7DD3FC;
+        }
+        
+        .page-title p{
+            margin-top:5px;
+            color:#D1D5DB;
+            font-size:15px;
+        }
+        
+        /* Genre Sections */
+
+        .genre-section{
+            padding: 5px 150px;
+            margin-top:1px;
+            margin-bottom:20px;
+        }
+        
+        .genre-section h2{
+            font-size:35px;
+            margin-top:50px;
+            margin-bottom:25px;
+            color:#FFFFFF;
+            border-left:6px solid #8B5CF6;
+            padding-left:15px;
+        }
+
+        /* Cards */
+
+        .cards{
+            display:flex;
+            justify-content:center;
+            flex-wrap:wrap;
+            gap:30px;
+            margin-top:40px;
+        }
+
+        .card{
+            width:220px;
+            background:#1E1B4B;
+            border-radius:15px;
+            overflow:hidden;
+            transition:0.3s;
+            box-shadow:0 5px 15px rgba(0,0,0,0.4);
+        }
+
+        .card:hover{
+            transform:translateY(-10px);
+            box-shadow:0 0 25px rgba(139,92,246,.6);
+        }
+
+        .card img{
+            width:100%;
+            height:300px;
+            object-fit:cover;
+        }
+
+        .card h3{
+            text-align:center;
+            margin-top:15px;
+            font-size:18px;
+        }
+
+        .card p{
+            text-align:center;
+            padding:10px 0 20px;
+            color:#D1D5DB;
+        }
+
+        /* Footer */
+
+        footer{
+            margin-top:70px;
+            background:#111;
+            text-align:center;
+            padding:30px;
+            color:#BDBDBD;
+        }
+
+        </style>
+        
+</head>
+
+<body>
+
+<header>
+
+<h1>MangaVerse</h1>
+
+<p>Discover the highest rated manga in every genre.</p>
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="recommendation.html">Recommendations</a>
+<a href="#genre">Genres</a>
+<a href="#contact">Contact</a>
+
+</nav>
+
+</header>
+
+<div class="page-title">
+
+<h2>Top Rated Manga</h2>
+
+<p>
+Browse the highest rated manga from every genre.
+</p>
+
+</div>
+
+<section class="genre-section">
+
+    <h2>Boys' Love</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxGG0AlxyHtm6b1TeYUOMlaW9zobEQmDZ5U_08-iJyEQ&s=10">
+            <h3>Given</h3>
+            <p>⭐ 8.32 / 10</p>
+        </div>
+
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjmFvK2AHvvIuT6HbMVdHGHPprR14z57FL5ariwgNv2A&s=10">
+            <h3>Sasaki to Miyano</h3>
+            <p>⭐ 8.18 / 10</p>
+        </div>
+
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1aQWGnqTMLBDz0rwesTIUmxc0SVHZabP6upTk1qp8Lg&s">
+            <h3>Sotsugyousei</h3>
+            <p>⭐ 8.49 / 10</p>
+        </div>
+
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/3/3f/Twittering_Birds_Never_Fly.jpg">
+            <h3>Twittering Birds Never Fly</h3>
+            <p>⭐ 8.45 / 10</p>
+        </div>
+
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsrFHXqVn4JW8e-fjt1FTZX46t1Dx01yZ4KtOQNQJc3A&s=10">
+            <h3>My Love Mix-Up!</h3>
+            <p>⭐ 8.38 / 10</p>
+        </div>
+
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3m3VP9QoEnCB5tEWBJABXukEEbXYIGNAzC_j8liAvew&s=10">
+            <h3>Sekai-ichi Hatsukoi</h3>
+            <p>⭐ 8.34 / 10</p>
+        </div>
+
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-ymnk7qEPQVjPoGD3kFEMY2ndcnC_UrYN8aXyc1xruA&s=10">
+            <h3>Doukyuusei</h3>
+            <p>⭐ 8.30 / 10</p>
+        </div>
+
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROU6j6OxtmXmVJRPWJ4Ht04adj2m3pYyJO9_jKX87yIA&s=10">
+            <h3>Here U Are</h3>
+            <p>⭐ 8.47 / 10</p>
+        </div>
+
+        <div class="card">
+            <img src="https://cdn.popcomics.com/squares/8a7a0ff6e1bf5d53e29e80e260569f01df435bbaa1767856c3e9bcf5edcd">
+            <h3>Koimonogatari: Love Stories</h3>
+            <p>⭐ 8.23 / 10</p>
+        </div>
+        
+        <div class="card">
+            <img src="https://static.zerochan.net/Yuuutsu.Na.Asa.full.1685757.jpg">
+            <h3>Yuuutsu na Asa</h3>
+            <h3>Blue Morning</h3>
+            <p>⭐ 7.99 / 10</p>
+        </div>
+
+
+    </div>
+
+    <h2>Thriller</h2>
+
+    <div class="cards">
+
+          <div class="card">
+            <img src="https://m.media-amazon.com/images/I/61bkDf8C3EL._AC_UF894,1000_QL80_.jpg">
+            <h3>Death Note</h3>
+            <p>⭐ 8.68 / 10</p>
+        </div>
+
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2XTcJZVvl72oA_9GiAEone-BAlYrRyMXzJkLWEAqQZQ&s=10">
+            <h3>20th Century Boys</h3>
+            <p>⭐ 8.93 / 10</p>
+        </div>
+
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRkcalmwmdApDotPGTWIDZtSEcp04qsd6sJaMJGOZfjQ&s">
+            <h3>Monster</h3>
+            <p>⭐ 9.16 / 10</p>
+        </div>
+
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMBRCfGPzt0p_7JfgUz0roskR9WTfaZO5RXoYS5OGllQ&s">
+            <h3>Goodnight Punpun</h3>
+            <p>⭐ 8.97 / 10</p>
+        </div>
+
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/5/5d/Alice_in_Borderland_cover.jpeg">
+            <h3>Imawa no Kuni no Alice</h3>
+            <p>⭐ 8.38 / 10</p>
+        </div>
+
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/8/8a/Tomodachi_Game_1.png">
+            <h3>Tomodachi Game</h3>
+            <p>⭐ 8.35 / 10</p>
+        </div>
+
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ53IRqo1v-9ADbNQANum3u7wx8_jQVZK4UYA2aVipqqg&s">
+            <h3>Billy Bat</h3>
+            <p>⭐ 8.60 / 10</p>
+        </div>
+
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/d/d7/Holyland_%28manga%29_vol._1.png">
+            <h3>Holyland</h3>
+            <p>⭐ 8.44 / 10</p>
+        </div>
+
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/4/4a/Berserk_vol01.png">
+            <h3>Berserk</h3>
+            <p>⭐ 9.46 / 10</p>
+        </div>
+
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/e/e5/Tokyo_Ghoul_volume_1_cover.jpg">
+            <h3>Tokyo Ghoul</h3>
+            <p>⭐ 8.56 / 10</p>
+        </div>
+
+    </div>
+
+    <h2>Romance</h2>
+
+    <div class="cards">
+
+          <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuMDKpXUPGHRue8E8lh6ewLJL_kATVuFhvdp6Co_ZTkg&s">
+            <h3>Fruits Basket</h3>
+            <p>⭐ 8.53 / 10</p>
+        </div>
+
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcDqQb7wC3IZVk-6sQxOuLHzksPAiZvFRxQQuhWdkfCA&s">
+            <h3>Horimiya</h3>
+            <p>⭐ 8.40 / 10</p>
+        </div>
+
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/8/86/Kaguya-sama_-_Love_is_War%2C_volume_1.jpg">
+            <h3>Kaguya-sama: Love Is War</h3>
+            <p>⭐ 8.88 / 10</p>
+        </div>
+
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/0/09/Nana_volume_1.png">
+            <h3>Nana</h3>
+            <p>⭐ 8.82 / 10</p>
+        </div>
+
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/1/1c/Threedaysofhap.jpeg">
+            <h3>Three Days of Happiness</h3>
+            <p>⭐ 8.91 / 10</p>
+        </div>
+
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQih8EICWkrVRo0opjwSdV1oeOiZFKloMx5mXSWlu7JMA&s=10">
+            <h3>My Youth Romantic Comedy Is Wrong, As I Expected </h3>
+            <p>⭐ 8.27 / 10</p>
+        </div>
+
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9sNLV19IY5jadsCgLymMCD56_kGbRq6Tn_EVh16f6-A&s=10">
+            <h3>Yona of the Dawn</h3>
+            <p>⭐ 8.83 / 10</p>
+        </div>
+
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDAMvU2ba_oDGlt5qqHAmts9H2DWrOMM0oko72gjmvJA&s">
+            <h3>The Fragrant Flower Blooms with Dignity</h3>
+            <p>⭐ 8.78 / 10</p>
+        </div>
+
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa2A79LcrCkhu2gX-fM0zn77wMiOb0NsbXzeFSC0Zvmw&s=10">
+            <h3>Ouran High School Host Club</h3>
+            <p>⭐ 8.50 / 10</p>
+        </div>
+
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUtHdFZWqEptBNkr28bTt2Qy9kR56nwXTUGCt3fBmBzg&s=10">
+            <h3>ReLIFE</h3>
+            <p>⭐ 8.63 / 10</p>
+        </div>
+
+    </div>
+
+    <h2>Comedy</h2>
+
+    <div class="cards">
+
+          <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlqS0agzMsOjLImtD19eupOZC5hfzwNdnDOdrH6uNv8Q&s=10">
+            <h3>Grand Blue</h3>
+            <p>⭐ 8.55 / 10</p>
+        </div>
+
+        <div class="card">
+            <img src="https://resizing.flixster.com/YuYKY4-bBK8NcFbuKH4G1_DzRYM=/fit-in/705x460/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p19610604_b_v8_ae.jpg">
+            <h3>Gokushufudou</h3>
+            <h3>(The Way of the Househusband)</h3>
+            <p>⭐ 7.26 / 10</p>
+        </div>
+
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXTZTOtkiWdi5POIc5u5_hEtx72t-mHyRVLCa-JzxP2A&s=10">
+            <h3>Yotsuba to!</h3>
+            <p>⭐ 8.92 / 10</p>
+        </div>
+
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBHayBxjNsCCjA0zNYAmGtxFbGeOlSbRAUuVjPZzRAXQ&s">
+            <h3>Kaguya-sama wa Kokurasetai: Tensai-tachi no Renai Zunousen</h3>
+            <p>⭐ 8.88 / 10</p>
+        </div>
+
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgVtXCo8LmkToqek_IB81ToflQRscUlodBnyYYJZ_4YA&s">
+            <h3>GTO: Great Teacher Onizuka</h3>
+            <p>⭐ 8.86 / 10</p>
+        </div>
+
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYUaeNODeeaaO4PUi-i1Ez7ljfOGHdVGlWLl6Trmum9Q&s=10">
+            <h3>Dungeon Meshi</h3>
+            <p>⭐ 8.81 / 10</p>
+        </div>
+        
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8bGBxC6ko_3Hf72QL4HHf7cEyhtbPq2jXWXQxYlYqnA&s">
+            <h3>One Punch-Man</h3>
+            <p>⭐ 8.69 / 10</p>
+        </div>
+
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFpafbZHEyiZO9yf7PHoIkevzYTgHb6DH_3D_pOVVwrw&s">
+            <h3>Spy x Family</h3>
+            <p>⭐ 8.45 / 10</p>
+        </div>
+
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/a/a9/Gintama_vol._01.png">
+            <h3>Gintama</h3>
+            <p>⭐ 8.61 / 10</p>
+        </div>
+
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTX0pCCpBjwLJrqcHbIyZ0qzcqUP2rhTLyL9VAdzIS54Tx-kJEn0akc8k&s=10">
+            <h3>Barakamon</h3>
+            <p>⭐ 8.45 / 10</p>
+        </div>
+
+    </div>
+
+    <h2>Action</h2>
+
+    <div class="cards">
+
+          <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZP6RxwWOEbiI9fFLdTm6Ju75O-atVJ-6bsE1SfbUf9Q&s=10">
+            <h3>Vagabond</h3>
+            <p>⭐ 9.27 / 10</p>
+        </div>
+
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7Q4Ql-3o5GP-0hKO6Cbj29Hg3Gh36nGJ4zoOSpZnZlQ&s=10">
+            <h3>Vinland Saga</h3>
+            <p>⭐ 9.09 / 10</p>
+        </div>
+
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU2t4Mwb2BI_bWDlexn_VDgRa_3NnWPhAVcOKOuWJdeg&s">
+            <h3>Solo Leveling</h3>
+            <p>⭐ 8.56 / 10</p>
+        </div>
+
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVN9yxz14l2geM9co2c3U5CR5K9iZku_pHf85uQlmDTw&s">
+            <h3>Gantz</h3>
+            <p>⭐ 8.08 / 10</p>
+        </div>
+
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7sUDstjSW15xQzqovK2yXA6oZAXCIkZUEy-JUUrulgA&s=10">
+            <h3>Sun-Ken Rock</h3>
+            <p>⭐ 8.04 / 10</p>
+        </div>
+
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyvD67qDED_4V62XtBdKpZWkpyCDh3ldq7PsFty0upOA&s=10">
+            <h3>Record of Ragnarok</h3>
+            <p>⭐ 7.95 / 10</p>
+        </div>
+
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6mJcfOnfZmFyl8XTjqkmV7bcwLCH-22pzTTd-f3O1_w&s=10">
+            <h3>Sakamoto Days</h3>
+            <p>⭐ 8.44 / 10</p>
+        </div>
+
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFDY0IYW_eBBi4-kUgM6mPZWhVa4m9f_2i6RSTBmLWbQ&s">
+            <h3>Kengan Ashura</h3>
+            <p>⭐ 8.44 / 10</p>
+        </div>
+
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpy972u14UJE2MMoDegUbe_ETlwBmSRJKv5eol85lbzg&s=10">
+            <h3>Claymore</h3>
+            <p>⭐ 8.29 / 10</p>
+        </div>
+
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO87kdAP9jxkzVU7UnC6L5xTyLhtRXVy2Wnr22hLDy7A&s=10">
+            <h3>Gamaran</h3>
+            <p>⭐ 7.72 / 10</p>
+        </div>
+
+    </div>
+
+    <h2>Fantasy</h2>
+
+    <div class="cards">
+
+          <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIOexyQHCRO2b9tR5p5PJb-F-lgf3VX0lEmg9Wzx21hQ&s=10">
+            <h3>Tongari Boushi no Atelier</h3>
+            <h3>(Witch Hat Atelier)</h3>
+            <p>⭐ 8.75 / 10</p>
+        </div>
+
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPD073BnjtbPpIIAdBmgj45tvIH9gIDU9Vba-lqA7S_w&s=10">
+            <h3>Fullmetal Alchemist</h3>
+            <p>⭐ 9.05 / 10</p>
+        </div>
+
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQKQ0FOiTaEjH5a2RZ6W3rYr-2r94_XqoYW96vI5WowQ&s=10">
+            <h3>One Piece</h3>
+            <p>⭐ 9.21 / 10</p>
+        </div>
+
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/9/90/Houseki_no_Kuni.jpg">
+            <h3>Land of the Lustrous</h3>
+            <p>⭐ 9.00 / 10</p>
+        </div>
+
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0iuwmuiQHKCVMblV7LEoK3ZhjTrXB9LwBNeIKG8zEBQ&s">
+            <h3>Frieren: Beyond Journey's End</h3>
+            <p>⭐ 8.87 / 10</p>
+        </div>
+
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkTX69Yzo_5VXAPVXzXvZWfdS_J9tUOuLClxpnshPaxA&s=10">
+            <h3>Kaze no Tani no Nausicaä</h3>
+            <p>⭐ 8.81 / 10</p>
+        </div>
+
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBtCzbT1RFrBsc1ewOpfjNFqiuS49mElVBy40-INYSzQ&s">
+            <h3>Made in Abyss</h3>
+            <p>⭐ 8.67 / 10</p>
+        </div>
+
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfCO0gD0m4oeFI8raW2taGGrdW6LBw8DrL5u7b6RYcWQ&s">
+            <h3>Hunter × Hunter</h3>
+            <p>⭐ 8.71 / 10</p>
+        </div>
+
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-8TCweISke3iCG-quBrRyCkW-h96dU5iFUn_pzUFBhg&s">
+            <h3>Dorohedoro</h3>
+            <p>⭐ 8.68 / 10</p>
+        </div>
+
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBFV5Pjnd72kkLkcjtatxb4y4u-Z6A2n3rq0hMEsZpyQ&s=10">
+            <h3>The Ancient Magus' Bride</h3>
+            <p>⭐ 8.41 / 10</p>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+
+<h3>MangaVerse</h3>
+
+<br>
+
+<p>Made with ❤️ by Priya</p>
+
+<br>
+
+<p>© 2026 MangaVerse. All Rights Reserved.</p>
+
+</footer>
+
+</body>
+</html>
