@@ -104,13 +104,30 @@
         }
 
         /* Cards */
-
         .cards{
             display:flex;
-            justify-content:center;
-            flex-wrap:wrap;
+            flex-wrap:nowrap;
+            overflow-x:auto;
+            scroll-snap-type:x mandatory;
             gap:30px;
             margin-top:40px;
+            padding-bottom:15px;
+        }
+
+        .cards .card{
+            flex:0 0 auto;
+            scroll-snap-align:start;
+        }
+
+        .cards::-webkit-scrollbar{
+            height:8px;
+        }
+        .cards::-webkit-scrollbar-thumb{
+            background:#8B5CF6;
+            border-radius:10px;
+        }
+        .cards::-webkit-scrollbar-track{
+            background:#1E1B4B;
         }
 
         .card{
