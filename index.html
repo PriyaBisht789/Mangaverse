@@ -288,91 +288,6 @@ footer{
     color: #BDBDBD;
 }
 
-/* Popup Background */
-
-        .popup{
-            display:none;
-            position:fixed;
-            inset:0;
-            background:rgba(0,0,0,.55);
-            backdrop-filter:blur(8px);
-            justify-content:center;
-            align-items:center;
-            z-index:1000;
-        }
-
-
-        /* Popup Box */
-        .popup-content{
-
-            width:850px;
-            max-width:90%;
-
-            background:#25204F;
-
-            position:relative;
-
-            border-radius:22px;
-
-            padding:35px;
-
-            box-shadow:0 20px 60px rgba(0,0,0,.55);
-
-            animation:popupAnimation .25s ease;
-
-        }
-
-        .popup-layout{
-            display:flex;
-            gap:30px;
-        }
-
-        .left img{
-            width:220px;
-            border-radius:15px;
-        }
-
-        .right{
-            flex:1;
-        }
-
-        .right h2{
-            margin-bottom:15px;
-        }
-
-        .right p{
-            margin-bottom:10px;
-        }
-        
-        @keyframes popupAnimation{
-            from{
-                opacity:0;
-                transform:scale(.85);
-            }
-            to{
-                opacity:1;
-                transform:scale(1);
-            }
-        }
-
-        /* Close Button */
-
-        .close-btn{
-            position:absolute;
-            top:15px;
-            right:20px;
-            font-size:32px;
-            color:white;
-            cursor:pointer;
-            transition:.25s;
-        }
-
-        .close-btn:hover{
-            color:#C084FC;
-            transform:rotate(90deg);
-        }
-
-
 </style>
 
 </head>
@@ -409,12 +324,16 @@ discover hidden gems,
 and find your next unforgettable adventure.
 </p>
 
- <div class="search-box">
-        <input type="text" placeholder="🔍 Search manga by title or genre...">
-        <button>Search</button>
-    </div>
+<div class="search-box">
+    <input type="text"
+           id="searchInput"
+           placeholder="🔍 Search manga by title...">
 
-    <button class="explore-btn">Explore Now</button>
+    <button onclick="searchManga()">Search</button>
+</div>
+   <button class="explore-btn" onclick="window.location.href='explore.html'">
+    Explore Now
+</button>
 
 
 </section>
@@ -424,8 +343,8 @@ and find your next unforgettable adventure.
 <section>
 
 <h2>🔥 Trending This Week</h2>
+<div class="cards" id="mangaCards">
 
-<div class="cards">
 
 <div class="card">
 <img src="https://cdn.kibrispdr.org/data/758/one-piece-logo-png-33.png">
@@ -451,6 +370,7 @@ and find your next unforgettable adventure.
 <p>⭐ 9.4/10</p>
 </div>
 
+
 </div>
 
 </section>
@@ -467,17 +387,17 @@ and find your next unforgettable adventure.
 
 <a href="romance.html" class="genre">💖 Romance</a>
 
-<a href="comedy.html" class="genre">😂 Comedy</a>
+<a href="#comedy" class="genre">😂 Comedy</a>
 
-<a href="horror.html" class="genre">👻 Horror</a>
+<a href="#horror" class="genre">👻 Horror</a>
 
-<a href="fantasy.html" class="genre">✨ Fantasy</a>
+<a href="#fantasy" class="genre">✨ Fantasy</a>
 
-<a href="sports.html" class="genre">🏐 Sports</a>
+<a href="#sports" class="genre">🏐 Sports</a>
 
-<a href="mystery.html" class="genre">🔍 Mystery</a>
+<a href="#mystery" class="genre">🔍 Mystery</a>
 
-<a href="scifi.html" class="genre">🌌 Sci-Fi</a>
+<a href="#scifi" class="genre">🌌 Sci-Fi</a>
 
 </div>
 
@@ -488,8 +408,8 @@ and find your next unforgettable adventure.
 <section>
 
 <h2>💎 Hidden Gems</h2>
+<div class="cards" id="mangaCards">
 
-<div class="cards">
 
 <div class="card">
 <img src="https://i.pinimg.com/originals/7f/d8/84/7fd884aa1c4893b165b195d7072cf113.jpg">
@@ -508,6 +428,7 @@ and find your next unforgettable adventure.
 <h3>Witch Hat Atelier</h3>
 <p>Beautiful fantasy with breathtaking artwork.</p>
 </div>
+
 
 </div>
 
@@ -561,13 +482,7 @@ We'd love to hear from you!
 <p>© 2026 MangaVerse. All Rights Reserved.</p>
 
 </footer>
-<div class="popup" id="popup">
-  <div class="popup-content">
-    <span class="close-btn" onclick="closePopup()">&times;</span>
-    <div id="popupBody"></div>
-  </div>
-</div>
-<script src="script.js"></script>
 
+<script src="script.js"></script>
 </body>
 </html>
