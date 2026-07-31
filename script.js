@@ -321,24 +321,39 @@ cards.forEach(card => {
 
 async function getManga(title) {
 
-    const query = `
-    query ($search: String) {
-        Media(search: $search, type: MANGA) {
-            title {
-                romaji
-            }
-            description
-            averageScore
-            chapters
-            volumes
+const query = `
+query ($search: String) {
+    Media(search: $search, type: MANGA) {
+        title {
+            romaji
+        }
 
-            coverImage {
-                large
+        description
+
+        averageScore
+
+        chapters
+
+        volumes
+
+        status
+
+        coverImage {
+            large
+        }
+
+        staff {
+            edges {
+                node {
+                    name {
+                        full
+                    }
+                }
             }
-            
         }
     }
-    `;
+}
+`;
 
     const response = await fetch("https://graphql.anilist.co", {
         method: "POST",
