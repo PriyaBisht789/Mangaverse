@@ -121,6 +121,91 @@
             padding: 30px;
             color: #BDBDBD;
         }
+
+          /* Popup Background */
+
+        .popup{
+            display:none;
+            position:fixed;
+            inset:0;
+            background:rgba(0,0,0,.55);
+            backdrop-filter:blur(8px);
+            justify-content:center;
+            align-items:center;
+            z-index:1000;
+        }
+
+
+        /* Popup Box */
+        .popup-content{
+
+            width:850px;
+            max-width:90%;
+
+            background:#25204F;
+
+            position:relative;
+
+            border-radius:22px;
+
+            padding:35px;
+
+            box-shadow:0 20px 60px rgba(0,0,0,.55);
+
+            animation:popupAnimation .25s ease;
+
+        }
+
+        .popup-layout{
+            display:flex;
+            gap:30px;
+        }
+
+        .left img{
+            width:220px;
+            border-radius:15px;
+        }
+
+        .right{
+            flex:1;
+        }
+
+        .right h2{
+            margin-bottom:15px;
+        }
+
+        .right p{
+            margin-bottom:10px;
+        }
+        
+        @keyframes popupAnimation{
+            from{
+                opacity:0;
+                transform:scale(.85);
+            }
+            to{
+                opacity:1;
+                transform:scale(1);
+            }
+        }
+
+        /* Close Button */
+
+        .close-btn{
+            position:absolute;
+            top:15px;
+            right:20px;
+            font-size:32px;
+            color:white;
+            cursor:pointer;
+            transition:.25s;
+        }
+
+        .close-btn:hover{
+            color:#C084FC;
+            transform:rotate(90deg);
+        }
+
     </style>
 </head>
 
@@ -287,6 +372,14 @@
         <p>© 2026 MangaVerse. All Rights Reserved.</p>
 
     </footer>
+
+<div class="popup" id="popup">
+  <div class="popup-content">
+    <span class="close-btn" onclick="closePopup()">&times;</span>
+    <div id="popupBody"></div>
+  </div>
+</div>
+<script src="script.js"></script>
 
 </body>
 
