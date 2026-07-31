@@ -52,14 +52,14 @@ async function loadFantasy() {
         card.className = "card";
 
         const shortDescription = manga.description
-    ? manga.description.replace(/<[^>]*>/g, "").slice(0, 70) + "..."
-    : "No description available.";
+        ? manga.description.replace(/<[^>]*>/g, "").slice(0, 70) + "..."
+        : "No description available.";
 
-card.innerHTML = `
-    <img src="${manga.coverImage.large}" alt="${manga.title.romaji}">
-    <h3>${manga.title.romaji}</h3>
-    <p>${shortDescription}</p>
-`;
+        card.innerHTML = `
+            <img src="${manga.coverImage.large}" alt="${manga.title.romaji}">
+            <h3>${manga.title.romaji}</h3>
+            <p>${shortDescription}</p>
+        `;
 
         card.addEventListener("click", () => {
             getManga(manga.title.romaji);
