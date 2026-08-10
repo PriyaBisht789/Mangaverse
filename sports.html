@@ -3,6 +3,7 @@
 
 <head>
     <title>Sports Manga - MangaVerse</title>
+
     <style>
         * {
             margin: 0;
@@ -20,18 +21,17 @@
             color: white;
         }
 
+        /* Header */
+
         header {
             background: linear-gradient(to right, #0f0f0f, #1b1b1b, #2d2d2d);
             text-align: center;
             padding: 30px;
         }
 
-        /* Header */
-
         header h1 {
             font-size: 50px;
             color: #7DD3FC;
-
         }
 
         header p {
@@ -39,7 +39,6 @@
             color: #D1D5DB;
             font-size: 20px;
         }
-
 
         /* Navbar */
 
@@ -114,6 +113,8 @@
             color: #D1D5DB;
         }
 
+        /* Footer */
+
         footer {
             margin-top: 60px;
             background: #111;
@@ -122,90 +123,110 @@
             color: #BDBDBD;
         }
 
-          /* Popup Background */
+        /* Popup Background */
 
-        .popup{
-            display:none;
-            position:fixed;
-            inset:0;
-            background:rgba(0,0,0,.55);
-            backdrop-filter:blur(8px);
-            justify-content:center;
-            align-items:center;
-            z-index:1000;
+        .popup {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, .55);
+            backdrop-filter: blur(8px);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
         }
-
 
         /* Popup Box */
-        .popup-content{
 
-            width:850px;
-            max-width:90%;
-
-            background:#25204F;
-
-            position:relative;
-
-            border-radius:22px;
-
-            padding:35px;
-
-            box-shadow:0 20px 60px rgba(0,0,0,.55);
-
-            animation:popupAnimation .25s ease;
-
+        .popup-content {
+            width: 850px;
+            max-width: 90%;
+            background: #25204F;
+            position: relative;
+            border-radius: 22px;
+            padding: 35px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, .55);
+            animation: popupAnimation .25s ease;
         }
 
-        .popup-layout{
-            display:flex;
-            gap:30px;
+        .popup-layout {
+            display: flex;
+            gap: 30px;
         }
 
-        .left img{
-            width:220px;
-            border-radius:15px;
+        .left img {
+            width: 220px;
+            border-radius: 15px;
         }
 
-        .right{
-            flex:1;
+        .right {
+            flex: 1;
         }
 
-        .right h2{
-            margin-bottom:15px;
+        .right h2 {
+            margin-bottom: 15px;
         }
 
-        .right p{
-            margin-bottom:10px;
+        .right p {
+            margin-bottom: 10px;
         }
-        
-        @keyframes popupAnimation{
-            from{
-                opacity:0;
-                transform:scale(.85);
+
+        @keyframes popupAnimation {
+            from {
+                opacity: 0;
+                transform: scale(.85);
             }
-            to{
-                opacity:1;
-                transform:scale(1);
+
+            to {
+                opacity: 1;
+                transform: scale(1);
             }
         }
 
         /* Close Button */
 
-        .close-btn{
-            position:absolute;
-            top:15px;
-            right:20px;
-            font-size:32px;
-            color:white;
-            cursor:pointer;
-            transition:.25s;
+        .close-btn {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            font-size: 32px;
+            color: white;
+            cursor: pointer;
+            transition: .25s;
         }
 
-        .close-btn:hover{
-            color:#C084FC;
-            transform:rotate(90deg);
+        .close-btn:hover {
+            color: #C084FC;
+            transform: rotate(90deg);
         }
 
+        /* Responsive Design */
+
+        @media (max-width: 600px) {
+
+            header h1 {
+                font-size: 40px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 8px;
+                font-size: 16px;
+            }
+
+            section {
+                padding: 40px 20px;
+            }
+
+            .popup-layout {
+                flex-direction: column;
+            }
+
+            .left img {
+                width: 100%;
+                max-width: 220px;
+            }
+        }
     </style>
 </head>
 
@@ -217,8 +238,6 @@
 
         <p>Chase your dreams, break your limits, and win!</p>
 
-
-
         <nav>
 
             <a href="index.html">Home</a>
@@ -229,131 +248,181 @@
 
         </nav>
 
-
     </header>
+
+
     <section>
-        <h1> Sports Manga </h1>
+
+        <h1>Sports Manga</h1>
 
     </section>
 
-        <div class="cards">
 
-            <div class="card">
-                <img
-                    src="https://tse3.mm.bing.net/th/id/OIP.UaUFUukjWu_jioeEvocPZQHaKj?r=0&rs=1&pid=ImgDetMain&o=7&rm=3">
-                <h3>Blue Lock</h3>
-                <p>young strikers compete to become Japan's greatest football forward.</p>
-            </div>
+    <div class="cards">
 
-            <div class="card">
-                <img
-                    src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlSQ0iwHwu5tnVeMN5RMCMQ1qiLaBDA7LzqSz1iKp4BGLeOWc3e-pLt3dotBMCUewu8jB-rLiG9J8JyscY5fnHdfjsOofj8Ui87tA26HgxcyCXQgnwplgI3HYeIsdVpJ0P1O_rhxBPrBY/s0/Slam-Dunk.jpg">
-                <h3>Slam Drunk</h3>
-                <p>A troublemaker discovers his passion for basketball and teamwork.</p>
-            </div>
-
-            <div class="card">
-                <img src="https://www.manga-news.com/public/images/dvd/ace-of-diamond-ActII-s3-anime.jpg">
-                <h3>Ao Ashi</h3>
-                <p>A talented football player chases his dream of going professional.</p>
-            </div>
-
-            <div class="card">
-                <img src="https://static1.moviewebimages.com/wordpress/wp-content/uploads/2024/04/hajime-no-ippo.jpg">
-                <h3>Hajime no Ippo</h3>
-                <p>A shy teenager becomes a powerful boxer through hard work.</p>
-            </div>
-
-            <div class="card">
-                <img
-                    src="https://tse1.mm.bing.net/th/id/OIP.V2TDh11TMcdCxCA9tBsy0gHaLH?r=0&rs=1&pid=ImgDetMain&o=7&rm=3">
-                <h3>Ace of Diamond</h3>
-                <p>A gifted pitcher aims to become the ace of his baseball team.</p>
-            </div>
-
-            <div class="card">
-                <img
-                    src="https://tse2.mm.bing.net/th/id/OIP.BmGkpaDphl3wwyOzbAVB2wHaLA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3">
-                <h3>Baby Steps</h3>
-                <p>A hardworking student learns tennis with dedication and strategy.</p>
-            </div>
-
-            <div class="card">
-                <img
-                    src="https://tse2.mm.bing.net/th/id/OIP._HChWKtg5X9AToSxY6y00gHaKz?r=0&rs=1&pid=ImgDetMain&o=7&rm=3">
-                <h3>Welcome to the Ballroom</h3>
-                <p>A teenager discovers the beauty and passion of competitive Dance.</p>
-            </div>
-
-            <div class="card">
-                <img
-                    src="https://tse1.mm.bing.net/th/id/OIP.kKU3MHCRWRw-0f2P6NACUgHaLH?r=0&rs=1&pid=ImgDetMain&o=7&rm=3">
-                <h3>Giant Killing</h3>
-                <p>A former star player rebuilds a struggling football club.</p>
-            </div>
-
-            <div class="card">
-                <img
-                    src="https://th.bing.com/th/id/OIP.sPAZQF6HV8-dxbegy5pxWwAAAA?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3">
-                <h3>Days</h3>
-                <p>A beginner joins a football team and grows through determination.</p>
-            </div>
-
-            <div class="card">
-                <img
-                    src="https://tse4.mm.bing.net/th/id/OIP.Q20mCJdeJwxpMmFtqo2bFgHaKk?r=0&rs=1&pid=ImgDetMain&o=7&rm=3">
-                <h3>Captain Tsubasa</h3>
-                <p>A young football prodigy dreams of becoming world's best.</p>
-            </div>
-
-            <div class="card">
-                <img src="https://i.pinimg.com/736x/c8/e7/58/c8e7582b8b742d1dbe949c521a1de0a2.jpg">
-                <h3>Run With the Wind</h3>
-                <p>A group of college students trains for a marathon relay race.</p>
-            </div>
-            <div class="card">
-                <img
-                    src="https://th.bing.com/th/id/OIP.G9f0G7Q1jgRwgCImN_ikqgHaLl?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3">
-                <h3>Rookies</h3>
-                <p>A determined teacher inspires troubled students through baseball.</p>
-            </div>
-            <div class="card">
-                <img
-                    src="https://tse3.mm.bing.net/th/id/OIP.i2bCSVaAp_rRxIlEmbHJwgHaLH?r=0&rs=1&pid=ImgDetMain&o=7&rm=3">
-                <h3>Tsurune</h3>
-                <p>A young archer overcomes fear to rediscover his passion for archery.</p>
-            </div>
-            <div class="card">
-                <img
-                    src="https://th.bing.com/th/id/OIP.SxX4dPM2JtqhyRo1atC_HAHaKi?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3">
-                <h3>Medalist</h3>
-                <p>A talented girl chases her dream of becoming a figure skating.</p>
-            </div>
-            <div class="card">
-                <img
-                    src="https://tse1.explicit.bing.net/th/id/OIP.eOa5wTINIjax4zFNKeSx6AAAAA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3">
-                <h3>Hanebado!</h3>
-                <p>High school players compete in intense badminton tournaments.</p>
-            </div>
-            <div class="card">
-                <img src="https://cdn.kodansha.us/statics/Publications/32470/Pages/page-0001.jpg">
-                <h3>MF Ghost</h3>
-                <p>A young racer competes in high speed motor events.</p>
-            </div>
-            <div class="card">
-                <img
-                    src="https://tse3.mm.bing.net/th/id/OIP.CsuR1HzTG-04L1yW4uAEaAHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3">
-                <h3>Initial D</h3>
-                <p>A gifted Driver rises through thrilling street racing competitions.</p>
-            </div>
-            <div class="card">
-                <img
-                    src="https://tse4.mm.bing.net/th/id/OIP.rjxVlqEdqd2pL64vqNBqDgHaLH?r=0&rs=1&pid=ImgDetMain&o=7&rm=3">
-                <h3>Whistle!</h3>
-                <p>A determined boy works hard to become a great football player.</p>
-            </div>
-
+        <div class="card">
+            <img
+                src="https://tse3.mm.bing.net/th/id/OIP.UaUFUukjWu_jioeEvocPZQHaKj?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                alt="Blue Lock">
+            <h3>Blue Lock</h3>
+            <p>Young strikers compete to become Japan's greatest football forward.</p>
         </div>
+
+
+        <div class="card">
+            <img
+                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlSQ0iwHwu5tnVeMN5RMCMQ1qiLaBDA7LzqSz1iKp4BGLeOWc3e-pLt3dotBMCUewu8jB-rLiG9J8JyscY5fnHdfjsOofj8Ui87tA26HgxcyCXQgnwplgI3HYeIsdVpJ0P1O_rhxBPrBY/s0/Slam-Dunk.jpg"
+                alt="Slam Dunk">
+            <h3>Slam Dunk</h3>
+            <p>A troublemaker discovers his passion for basketball and teamwork.</p>
+        </div>
+
+
+        <div class="card">
+            <img
+                src="https://www.manga-news.com/public/images/dvd/ace-of-diamond-ActII-s3-anime.jpg"
+                alt="Ao Ashi">
+            <h3>Ao Ashi</h3>
+            <p>A talented football player chases his dream of going professional.</p>
+        </div>
+
+
+        <div class="card">
+            <img
+                src="https://static1.moviewebimages.com/wordpress/wp-content/uploads/2024/04/hajime-no-ippo.jpg"
+                alt="Hajime no Ippo">
+            <h3>Hajime no Ippo</h3>
+            <p>A shy teenager becomes a powerful boxer through hard work.</p>
+        </div>
+
+
+        <div class="card">
+            <img
+                src="https://tse1.mm.bing.net/th/id/OIP.V2TDh11TMcdCxCA9tBsy0gHaLH?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                alt="Ace of Diamond">
+            <h3>Ace of Diamond</h3>
+            <p>A gifted pitcher aims to become the ace of his baseball team.</p>
+        </div>
+
+
+        <div class="card">
+            <img
+                src="https://tse2.mm.bing.net/th/id/OIP.BmGkpaDphl3wwyOzbAVB2wHaLA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                alt="Baby Steps">
+            <h3>Baby Steps</h3>
+            <p>A hardworking student learns tennis with dedication and strategy.</p>
+        </div>
+
+
+        <div class="card">
+            <img
+                src="https://tse2.mm.bing.net/th/id/OIP._HChWKtg5X9AToSxY6y00gHaKz?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                alt="Welcome to the Ballroom">
+            <h3>Welcome to the Ballroom</h3>
+            <p>A teenager discovers the beauty and passion of competitive dance.</p>
+        </div>
+
+
+        <div class="card">
+            <img
+                src="https://tse1.mm.bing.net/th/id/OIP.kKU3MHCRWRw-0f2P6NACUgHaLH?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                alt="Giant Killing">
+            <h3>Giant Killing</h3>
+            <p>A former star player rebuilds a struggling football club.</p>
+        </div>
+
+
+        <div class="card">
+            <img
+                src="https://th.bing.com/th/id/OIP.sPAZQF6HV8-dxbegy5pxWwAAAA?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3"
+                alt="Days">
+            <h3>Days</h3>
+            <p>A beginner joins a football team and grows through determination.</p>
+        </div>
+
+
+        <div class="card">
+            <img
+                src="https://tse4.mm.bing.net/th/id/OIP.Q20mCJdeJwxpMmFtqo2bFgHaKk?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                alt="Captain Tsubasa">
+            <h3>Captain Tsubasa</h3>
+            <p>A young football prodigy dreams of becoming the world's best.</p>
+        </div>
+
+
+        <div class="card">
+            <img
+                src="https://i.pinimg.com/736x/c8/e7/58/c8e7582b8b742d1dbe949c521a1de0a2.jpg"
+                alt="Run With the Wind">
+            <h3>Run With the Wind</h3>
+            <p>A group of college students trains for a marathon relay race.</p>
+        </div>
+
+
+        <div class="card">
+            <img
+                src="https://th.bing.com/th/id/OIP.G9f0G7Q1jgRwgCImN_ikqgHaLl?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3"
+                alt="Rookies">
+            <h3>Rookies</h3>
+            <p>A determined teacher inspires troubled students through baseball.</p>
+        </div>
+
+
+        <div class="card">
+            <img
+                src="https://tse3.mm.bing.net/th/id/OIP.i2bCSVaAp_rRxIlEmbHJwgHaLH?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                alt="Tsurune">
+            <h3>Tsurune</h3>
+            <p>A young archer overcomes fear to rediscover his passion for archery.</p>
+        </div>
+
+
+        <div class="card">
+            <img
+                src="https://th.bing.com/th/id/OIP.SxX4dPM2JtqhyRo1atC_HAHaKi?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3"
+                alt="Medalist">
+            <h3>Medalist</h3>
+            <p>A talented girl chases her dream of becoming a figure skater.</p>
+        </div>
+
+
+        <div class="card">
+            <img
+                src="https://tse1.explicit.bing.net/th/id/OIP.eOa5wTINIjax4zFNKeSx6AAAAA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                alt="Hanebado">
+            <h3>Hanebado!</h3>
+            <p>High school players compete in intense badminton tournaments.</p>
+        </div>
+
+
+        <div class="card">
+            <img
+                src="https://cdn.kodansha.us/statics/Publications/32470/Pages/page-0001.jpg"
+                alt="MF Ghost">
+            <h3>MF Ghost</h3>
+            <p>A young racer competes in high-speed motor events.</p>
+        </div>
+
+
+        <div class="card">
+            <img
+                src="https://tse3.mm.bing.net/th/id/OIP.CsuR1HzTG-04L1yW4uAEaAHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                alt="Initial D">
+            <h3>Initial D</h3>
+            <p>A gifted driver rises through thrilling street racing competitions.</p>
+        </div>
+
+
+        <div class="card">
+            <img
+                src="https://tse4.mm.bing.net/th/id/OIP.rjxVlqEdqd2pL64vqNBqDgHaLH?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                alt="Whistle">
+            <h3>Whistle!</h3>
+            <p>A determined boy works hard to become a great football player.</p>
+        </div>
+
+    </div>
+
 
     <footer>
 
@@ -369,13 +438,23 @@
 
     </footer>
 
-<div class="popup" id="popup">
-  <div class="popup-content">
-    <span class="close-btn" onclick="closePopup()">&times;</span>
-    <div id="popupBody"></div>
-  </div>
-</div>
-<script src="script.js"></script>
+
+    <!-- Popup -->
+
+    <div class="popup" id="popup">
+
+        <div class="popup-content">
+
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+
+            <div id="popupBody"></div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
 
 </body>
 
